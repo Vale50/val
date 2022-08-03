@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+  
+        
+<title> header</title>
+<link rel="stylesheet" href="icon.css">
+        <link rel="stylesheet" type="text/css" href="new.css"> 
+        <link rel="stylesheet" type="text/css" href="hover.css"> 
+        
+        <script src="popup.js"></script>
+        <style type="text/css">
+            html,body{
+                height:100%;
+                font-family:"Arial, Helvetica, sans-serif";
+
+            }
+            .div1, .div2, .div3, .div4{
+                position:relative;
+                align-items: center;
+    overflow: hidden;
+   
+        border:1px solid;
+        float:left;
+        width:200px;
+        height:150px;
+        margin: 40px;
+        margin-left:3px;
+        margin-right: 3px;
+        border-radius: 20px;
+        flex-direction: row;
+        text-align: center;
+
+    }
+    .div1, .div2, .div3, .div4{
+        margin: 20px;
+        
+    }
+    .div1:hover {
+   background-color: tomato;
+   height:200px;
+   width:250px;
+   
+  
+    }
+    .div2:hover {
+   background-color: tomato;
+   height:200px;
+   width:250px;
+   
+  
+    }
+    .div3:hover {
+   background-color: tomato;
+   height:200px;
+   width:250px;
+   
+    }
+    .div4:hover {
+   background-color: tomato;
+   height:200px;
+   width:250px;
+   
+    }
+    .div1 {
+        background:#705d;
+        
+    }
+    .div2 {
+        background:#c50d66;
+    }
+    .div3 {
+        background: #f07810;
+    }
+    .div4 {
+        background:blueviolet;
+    }
+    head{
+    background-color:rgb(46, 133, 139);
+}
+body{
+    background-color:#919da1}
+    .divouter{
+        display:inline;
+        text-align:center;
+    }
+    .svg1, .svg2, .svg3 {
+        margin-bottom:20px;
+    }
+    
+    h2{
+        
+        text-shadow: 2px 2px 4px #000000,
+        2px 2px 4px #fff,
+        2px 2px 18px #0fa,
+        2px 2px 30px #0fa,
+        2px 2px 40px #0fa;
+         
+    }
+    h1{
+        
+        text-shadow: 2px 2px 4px #000000;
+    }
+    body{
+        background-image: url("IMG-1378.JPG");
+        height:100%;
+        
+    }
+    
+
+        
+           
+/*.head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 10%;
+  width: 100%;
+  background-color: rgb(46, 133, 104);
+  color:royalblue;
+  text-align: center;
+  }*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background-color: #3c99dc;
+  color:royalblue;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 20px;
+  }
+  .arrow { 
+        position:relative;
+  bottom: 0;
+  left: 85%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image:  url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+      }
+      .bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+      }
+
+/* Scroll down indicator (bouncing) */
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px); } }
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px); } }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+      }
+      .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-right: 50px;
+    margin-top: 50px;
+
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+ */
+
+
+    
+    /*
+
+@-webkit-keyframes bounce {
+        0%       { bottom:5px; }
+        25%, 75% { bottom:15px; }
+        50%      { bottom:20px; }
+        100%     {bottom:0;}
+        .bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+
+position:relative;
+        width:0;
+        height:0;
+        border-left:25px solid transparent;
+        border-right:25px solid transparent;
+        border-top:50px solid red;
+        left:50%;
+        bottom:0;
+        margin-top:17px;
+        margin-left:430px;
+        -webkit-animation:bounce 1s infinite;
+        position: fixed;
+
+
+
+
+.mine-container{
+    display: inline-flex;
+    position: relative;
+    height: 150px;
+    width: 200px;
+    margin-right: 500px;
+    margin-top: -5px;
+    margin-left: 2px;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    background:#705df2;
+    color: #705df2;
+    border-radius: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 30px;
+    text-decoration: unset;
+    box-shadow: 0px 24px 74px rgb(60 0 189 / 20%);
+}
+.flot-container{
+    position:absolute;
+    width:25%;
+    float:right;
+    margin-right:-71px;
+    margin-top:50px;
+    right:10px;
+    padding:20px;
+    border:2px solid rgb(0, 217, 255);
+}
+.flot-container:hover {
+   background-color: tomato;
+}            
+.flat-container:hover {
+   background-color: tomato;     
+ }
+ .discovery{
+    width:25%;
+    display: inline-flex;
+    position: relative;
+    margin-top:80px;
+    position:relative;
+    float:right;
+    margin-right: 50px;
+    height:100px;
+    padding:20px;
+    border:2px solid rgb(0, 217, 255);
+}
+.discovery:hover {
+   background-color: tomato;     
+ }
+    
+
+.flut-container:hover {
+   background-color: tomato;     
+ }
+ .flut-container {
+    display: inline-flex;
+    position: relative;
+    height: 150px;
+    width: 200px;
+    margin-right: 50px;
+    margin-top: -75px;
+    margin-left: 25px;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    background:rgb(0, 217, 255);
+    color: #705df2;
+    border-radius: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 30px;
+    text-decoration: unset;
+    box-shadow: 0px 24px 74px rgb(60 0 189 / 20%);
+}
+.discovery {
+    display: inline-flex;
+    width: 200px;
+    height: 150px;
+    margin-right: 120px;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    background: peru;
+    color: #705df2;
+    border-radius: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 30px;
+    text-decoration: unset;
+    box-shadow: 0px 24px 74px rgb(60 0 189 / 20%);
+    margin-top: -60px;
+    margin-left: -25px;
+}
+
+ a{
+     color:rgb(0, 119, 255);
+ }
+ h1{e
+     color:rgb(143, 245, 245);
+ }
+ 
+ */
+ 
+
+
+ 
+        </style>
+
+
+        </head>
+        <h2 style="text-align:center; padding-top: 20px; color: #FFF; 
+        font-family: Roboto;"></h2>
+  
+      <ul>
+        <li><a class="btn1">Home</a></li>
+        <li><a href="About.html"class="btn1">About</a></li>
+        <li><a href="Blog.html"class="btn1">Blog</a></li>
+        <li><a href="contact.html" class="btn1">Contact</a></li>
+        <li><a class="btn1">Payment Plans</a></li>
+        <li><a href="classrooms.html"class="btn1">Classroom</a></li>
+        <li><a href="profilecard.html" class="btn1">Tutors</a></li>
+        <li><a href="Login.html"class="btn1">Login</a></li>
+      </ul>
+    </head>
+   
+    
+       
+        
+
+
+    
+</div>
+<div class="header"></div>
+<h2 style=color:honeydew> * BEST ONLINE PLATFORM</h2>
+<h2 style=color:honeydew> * INTENSELY ENGAGING COURSES</h2>
+<h2 style=color:honeydew> * UP TO DATE CURICULUM</h2>
+<h2 style=color:honeydew> * 24/7 HOME WORK HELP AND GUIDIANCE</h2>
+
+<input type="text" id="dem" oninput="po()"> </br>
+</br>
+ <h1 id="sem" ></h1>  
+
+ <div class="arrow bounce">
+
+</div>
+ 
+</br>
+</br>
+    
+
+ 
+
+
+    <script>
+        /*
+        function po(){
+            var x = document.getElementById("dem").value;
+            document.getElementById("sem").innerHTML= "you wrote:" + x;
+        } 
+        SVG
+        <div class="svg1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+            <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+            <line x1="3" y1="6" x2="3" y2="19" />
+            <line x1="12" y1="6" x2="12" y2="19" />
+            <line x1="21" y1="6" x2="21" y2="19" />
+          </svg>
+  <div class="svg2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <line x1="12" y1="12" x2="12" y2="12.01" />
+        <path d="M12 2a4 10 0 0 0 -4 10a4 10 0 0 0 4 10a4 10 0 0 0 4 -10a4 10 0 0 0 -4 -10" transform="rotate(45 12 12)" />
+        <path d="M12 2a4 10 0 0 0 -4 10a4 10 0 0 0 4 10a4 10 0 0 0 4 -10a4 10 0 0 0 -4 -10" transform="rotate(-45 12 12)" />
+      </svg>
+  </div>
+  <div class="svg3"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-community" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8" />
+    <line x1="13" y1="7" x2="13" y2="7.01" />
+    <line x1="17" y1="7" x2="17" y2="7.01" />
+    <line x1="17" y1="11" x2="17" y2="11.01" />
+    <line x1="17" y1="15" x2="17" y2="15.01" />
+  </svg></div>
+        */
+        
+    
+    </script>
+  
+    <form action="/action_page.php"></form><input type="file" id="myFile" name="filename">
+        <input type="submit">
+
+    </form>
+    </div>
+   
+    <div class="footer">
+        <p></p> 
+        
+    
+        <div class="divouter"> 
+            <div class="div1">
+                <h1 style="color:honeydew"><a href=coding.html style="text-decoration:none; color:honeydew" > 
+                    Discovery-CHANNEL</br>
+                </br>
+    
+                    </h1>
+                
+                </a> </br>
+            </h1>
+            </div>
+            <div class="div2">
+                <h1 style="color:honeydew"> Virtual classroom</h1>
+            
+                </div>
+                    <div class="div3">
+                        <h1 style="color:honeydew">Upload Homework</h1>
+                    
+                        
+
+                    
+                    </br>
+                         </br>
+                        </h1>
+                        <body>
+                        </br>
+                    </br>
+                            
+                                
+                              </div>
+                        
+                        </body>
+                    
+                        </div>
+                    <div class="div4" >
+                        
+                    <div class="discovery"  > <h1 style="color:honeydew"><a href=explore.html style="text-decoration:none; color:honeydew" >
+                        Explore
+                    </h1>
+                </a>
+
+                    </div>
+                </div>
+                    <h2><i>Each lesson starts at the end of Timer</i> </h2>
+                    <h2 id="dema"></h2>
+                    <button onclick="myStopFunction()"><b>Class Timer </b></button>
+                    <a href="classrooms.html"><button> <b>Enter Classroom</b></button></a>
+        
+   <body>
+   
+        <body>
+
+
+
+            
+            <h2 id="demoo"></h2>
+          
+        
+
+            <script src="countdown.js">
+            
+            </script>            
+           <style>
+            h2{
+                color:gainsboro;
+               
+                
+            }
+            button{
+                background-color:greenyellow ;
+            
+            }
+            i{
+                font-size: 200%;
+                color:greenyellow;
+            }
+
+        </style>
+            
+            </body>
+
+    <div class="video__icon">
+      <div class="circle--outer"></div>
+      <div class="circle--inner"></div>
+      <p>LIVE</p>
+    </div>
+
+   </body>
+   
+    
+
+    <footer>
+        
+        <h2> </h2>
+                
+    </footer>
+   
+</html>
