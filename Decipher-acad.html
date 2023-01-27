@@ -3,15 +3,25 @@
     <head>
         <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
         
 <title> header</title>
 <link rel="stylesheet" href="icon.css">
         <link rel="stylesheet" type="text/css" href="new.css"> 
         <link rel="stylesheet" type="text/css" href="hover.css"> 
+
         
         <script src="popup.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src='game.js'>
+        
+    
+        </script>
         <style type="text/css">
+        
+
             html,body{
                 height:100%;
                 font-family:"Arial, Helvetica, sans-serif";
@@ -40,42 +50,46 @@
     }
     .div1:hover {
    background-color: tomato;
-   height:200px;
-   width:250px;
+   height:100px;
+   width:150px;
    
   
     }
     .div2:hover {
    background-color: tomato;
-   height:200px;
-   width:250px;
+   height:100px;
+   width:150px;
    
   
     }
     .div3:hover {
    background-color: tomato;
-   height:200px;
-   width:250px;
+   height:100px;
+   width:150px;
    
     }
     .div4:hover {
    background-color: tomato;
-   height:200px;
-   width:250px;
+   height:100px;
+   width:150px;
    
     }
     .div1 {
         background:#705d;
+        border: 3px solid tomato;
         
     }
     .div2 {
         background:#c50d66;
+        border: 3px solid tomato;
     }
     .div3 {
         background: #f07810;
+        border: 3px solid tomato;
     }
     .div4 {
         background:blueviolet;
+        border: 3px solid tomato;
     }
     head{
     background-color:rgb(46, 133, 139);
@@ -94,9 +108,9 @@ body{
         
         text-shadow: 2px 2px 4px #000000,
         2px 2px 4px #fff,
-        2px 2px 18px #0fa,
-        2px 2px 30px #0fa,
-        2px 2px 40px #0fa;
+        2px 2px 18px skyblue,
+        2px 2px 30px skyblue,
+        2px 2px 40px skyblue;
          
     }
     h1{
@@ -104,29 +118,45 @@ body{
         text-shadow: 2px 2px 4px #000000;
     }
     body{
-        background-image: url("IMG-1378.JPG");
-        height:100%;
-        
+        background-image: url("Grey.gif");
+        height:50%;
+        IMG-1378.JPG
     }
-    
 
-        
-           
-/*.head {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 10%;
-  width: 100%;
-  background-color: rgb(46, 133, 104);
-  color:royalblue;
+    .hide, .hide1, .hide2, .hide3, .hide4{ 
+      display:none;
+      width: 40%;
+  padding: 50px 0;
+  border-radius: 25px;
+  border: 2px solid purple;
   text-align: center;
-  }*/
+  background-color: lightseagreen;
+  margin-top: 20px;
+  opacity: 0.6;
+    }
+    .show:hover + .hide1, .show1:hover + .hide2, .show2:hover + .hide3, .show3:hover + .hide4{
+      display:block;
+      color:#fff;
+    }
+    p{
+   color: #00008b;
+   font-size: 20px;
+ }
+h4{
+  color:plum;
+}
+ a{
+   text-indent: 25px;
+ }
+ #mydiv{
+   display: none;
+ }
+        
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
-  height: 40%;
+  height: 100%;
   width: 100%;
   background-color: #3c99dc;
   color:royalblue;
@@ -188,8 +218,7 @@ body{
   position: relative;
   display: inline-block;
   cursor: pointer;
-}
-
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
@@ -239,142 +268,8 @@ body{
 }
 
  */
-
-
-    
-    /*
-
-@-webkit-keyframes bounce {
-        0%       { bottom:5px; }
-        25%, 75% { bottom:15px; }
-        50%      { bottom:20px; }
-        100%     {bottom:0;}
-        .bounce {
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-}
-
-
-position:relative;
-        width:0;
-        height:0;
-        border-left:25px solid transparent;
-        border-right:25px solid transparent;
-        border-top:50px solid red;
-        left:50%;
-        bottom:0;
-        margin-top:17px;
-        margin-left:430px;
-        -webkit-animation:bounce 1s infinite;
-        position: fixed;
-
-
-
-
-.mine-container{
-    display: inline-flex;
-    position: relative;
-    height: 150px;
-    width: 200px;
-    margin-right: 500px;
-    margin-top: -5px;
-    margin-left: 2px;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    background:#705df2;
-    color: #705df2;
-    border-radius: 36px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0 30px;
-    text-decoration: unset;
-    box-shadow: 0px 24px 74px rgb(60 0 189 / 20%);
-}
-.flot-container{
-    position:absolute;
-    width:25%;
-    float:right;
-    margin-right:-71px;
-    margin-top:50px;
-    right:10px;
-    padding:20px;
-    border:2px solid rgb(0, 217, 255);
-}
-.flot-container:hover {
-   background-color: tomato;
-}            
-.flat-container:hover {
-   background-color: tomato;     
- }
- .discovery{
-    width:25%;
-    display: inline-flex;
-    position: relative;
-    margin-top:80px;
-    position:relative;
-    float:right;
-    margin-right: 50px;
-    height:100px;
-    padding:20px;
-    border:2px solid rgb(0, 217, 255);
-}
-.discovery:hover {
-   background-color: tomato;     
- }
-    
-
-.flut-container:hover {
-   background-color: tomato;     
- }
- .flut-container {
-    display: inline-flex;
-    position: relative;
-    height: 150px;
-    width: 200px;
-    margin-right: 50px;
-    margin-top: -75px;
-    margin-left: 25px;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    background:rgb(0, 217, 255);
-    color: #705df2;
-    border-radius: 36px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0 30px;
-    text-decoration: unset;
-    box-shadow: 0px 24px 74px rgb(60 0 189 / 20%);
-}
-.discovery {
-    display: inline-flex;
-    width: 200px;
-    height: 150px;
-    margin-right: 120px;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    background: peru;
-    color: #705df2;
-    border-radius: 36px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0 30px;
-    text-decoration: unset;
-    box-shadow: 0px 24px 74px rgb(60 0 189 / 20%);
-    margin-top: -60px;
-    margin-left: -25px;
-}
-
- a{
-     color:rgb(0, 119, 255);
- }
- h1{e
-     color:rgb(143, 245, 245);
- }
  
- */
+
  
 
 
@@ -389,8 +284,8 @@ position:relative;
       <ul>
         <li><a class="btn1">Home</a></li>
         <li><a href="About.html"class="btn1">About</a></li>
-        <li><a href="Blog.html"class="btn1">Blog</a></li>
         <li><a href="contact.html" class="btn1">Contact</a></li>
+        <li ><a href="Blog.html"class="btn3">Mission</a></li>
         <li><a class="btn1">Payment Plans</a></li>
         <li><a href="classrooms.html"class="btn1">Classroom</a></li>
         <li><a href="profilecard.html" class="btn1">Tutors</a></li>
@@ -400,18 +295,47 @@ position:relative;
    
     
        
-        
+    
 
 
     
 </div>
-<div class="header"></div>
-<h2 style=color:honeydew> * BEST ONLINE PLATFORM</h2>
-<h2 style=color:honeydew> * INTENSELY ENGAGING COURSES</h2>
-<h2 style=color:honeydew> * UP TO DATE CURICULUM</h2>
-<h2 style=color:honeydew> * 24/7 HOME WORK HELP AND GUIDIANCE</h2>
 
-<input type="text" id="dem" oninput="po()"> </br>
+
+<div><h2> * MATHEMATICS </h2></div>
+<div><h2>* CODING</h2> </div>
+<div><h2> * SCIENCE AND RESEARCH</h2></div>
+<div><h2>*  GRAPHICS</h2> </div>
+<div><h2> * BIOETHICS</h2></div>
+<div><h2> * HISTORY</h2></div>
+
+
+<button onclick="myFunction()">More</button>
+<div id='mydiv'>
+  <div class="show" > <h2 style=color:honeydew> * 24/7 HOME WORK HELP AND GUIDIANCE + </h2>
+ 
+  </div>
+  <div class="hide1"><p> The importance of homework for student learning and development can not be overemphasized, that's why our "prop-team" are readily available to provide adequate assistance.</p>
+  <button style="font-size:24px"> !SUBSCRIBE<i class="far fa-bell"></i></button>
+  </div>
+  <div class="show1"><h2 style=color:honeydew> * INTENSIVE & ENGAGING COURSES</h2> </div>
+  <div class="hide2"> <p>Our intensive courses have become a mainstay and a major component of achieving an optimized learning outcome. Please follow our scheduled-format for best results for your child.</p></div>
+  <div class="show2"> <h2 style=color:honeydew> * UP TO DATE CURICULUM</h2></div>
+  <div class="hide3"> <p> We do not run an isolated signpost as there's importance of connecting the curriculum across different grade level. However we allow student to progress according to their level of interet in a particular subject. </p></div>
+  <div class="show3"><h2 style=color:honeydew> *  ENRICHED TEACHING METHODS</h2> </div>
+  <div class="hide4"> <p>Effective teaching strategies that are well enriched with creativity and variety to maintain students motivation, interest and discipline.</p> </div>
+</div>
+<script>
+  function myFunction() {
+    var x= document.getElementById("mydiv");
+    if (x.style.display==='none'){
+      x.style.display='block';
+    }else{
+      x.style.display='none';
+    }
+  }
+</script>
+<////////input type="text" id="dem" oninput="po()"> </br>
 </br>
  <h1 id="sem" ></h1>  
 
@@ -426,42 +350,7 @@ position:relative;
  
 
 
-    <script>
-        /*
-        function po(){
-            var x = document.getElementById("dem").value;
-            document.getElementById("sem").innerHTML= "you wrote:" + x;
-        } 
-        SVG
-        <div class="svg1">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
-            <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
-            <line x1="3" y1="6" x2="3" y2="19" />
-            <line x1="12" y1="6" x2="12" y2="19" />
-            <line x1="21" y1="6" x2="21" y2="19" />
-          </svg>
-  <div class="svg2">
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <line x1="12" y1="12" x2="12" y2="12.01" />
-        <path d="M12 2a4 10 0 0 0 -4 10a4 10 0 0 0 4 10a4 10 0 0 0 4 -10a4 10 0 0 0 -4 -10" transform="rotate(45 12 12)" />
-        <path d="M12 2a4 10 0 0 0 -4 10a4 10 0 0 0 4 10a4 10 0 0 0 4 -10a4 10 0 0 0 -4 -10" transform="rotate(-45 12 12)" />
-      </svg>
-  </div>
-  <div class="svg3"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-community" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8" />
-    <line x1="13" y1="7" x2="13" y2="7.01" />
-    <line x1="17" y1="7" x2="17" y2="7.01" />
-    <line x1="17" y1="11" x2="17" y2="11.01" />
-    <line x1="17" y1="15" x2="17" y2="15.01" />
-  </svg></div>
-        */
-        
-    
-    </script>
+   
   
     <form action="/action_page.php"></form><input type="file" id="myFile" name="filename">
         <input type="submit">
@@ -475,8 +364,8 @@ position:relative;
     
         <div class="divouter"> 
             <div class="div1">
-                <h1 style="color:honeydew"><a href=coding.html style="text-decoration:none; color:honeydew" > 
-                    Discovery-CHANNEL</br>
+                <h1 style="color:honeydew"><a href=quiz.html style="text-decoration:none; color:honeydew" > 
+                    QUIZ</br>
                 </br>
     
                     </h1>
@@ -485,11 +374,18 @@ position:relative;
             </h1>
             </div>
             <div class="div2">
-                <h1 style="color:honeydew"> Virtual classroom</h1>
+              <h1 style="color:honeydew"><a href=games.html style="text-decoration:none; color:honeydew" > 
+                GAMES</br>
+            </br>
+
+                </h1>
             
+            </a> </br>
+        </h1>
+
                 </div>
                     <div class="div3">
-                        <h1 style="color:honeydew">Upload Homework</h1>
+                        <h1 style="color:honeydew"><a href=PPT.html style="text-decoration:none;color:honeydew"> POWER-POINTS </h1> </a>
                     
                         
 
@@ -520,6 +416,21 @@ position:relative;
                     <h2 id="dema"></h2>
                     <button onclick="myStopFunction()"><b>Class Timer </b></button>
                     <a href="classrooms.html"><button> <b>Enter Classroom</b></button></a>
+
+              </br>
+
+        <!-- Add font awesome icons -->
+      </br>   </br></br> <h4>follow us!</h4> </br>
+    
+        <a href="#" class="fa fa-facebook"></a> 
+
+        <a href="#" class="fa fa-twitter"></a>
+
+        <a href="#" class="fa fa-google"></a>
+
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
         
    <body>
    
@@ -546,7 +457,7 @@ position:relative;
             
             }
             i{
-                font-size: 200%;
+                font-size: 150%;
                 color:greenyellow;
             }
 
@@ -559,7 +470,55 @@ position:relative;
       <div class="circle--inner"></div>
       <p>LIVE</p>
     </div>
+    <style>
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+      
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+      </style>
 
+      <body>
+        
+
+      </body>
    </body>
    
     
